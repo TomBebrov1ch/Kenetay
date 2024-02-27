@@ -1,0 +1,13 @@
+.header_mob {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    @apply mt-7;
+}
+
+.logo {
+    width: clamp(52.5px, 24.5322vw, 210px);
+    height: clamp(42.5px, 19.859399999999997vw, 170px);
+}

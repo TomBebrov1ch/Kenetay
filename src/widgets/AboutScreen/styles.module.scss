@@ -1,0 +1,21 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    width: 90%;
+    margin: auto;
+
+    &__heading {
+        font-size: clamp(15px, 7.0092vw, 60px);
+        font-weight: 600;
+        @apply text-dark mt-7;
+    }
+
+    &__paragraph {
+        text-align: center;
+        @apply mt-7;
+        line-height: clamp(15px, 7.0092vw, 60px);
+    }
+}

@@ -1,0 +1,37 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+
+    &__heading {
+        @apply mt-11;
+        font-size: clamp(19px, 8.878319999999999vw, 76px);
+        font-weight: 600;
+        @apply text-dark;
+
+        &__span {
+            font-size: clamp(19px, 8.878319999999999vw, 76px);
+            font-weight: 600;
+            @apply text-dark;
+            @apply text-green;
+        }
+    }
+
+    &__paragraph {
+        @apply mt-7;
+        font-size: clamp(8px, 3.73824vw, 32px);
+        font-weight: 200;
+        @apply text-dark;
+        line-height: clamp(15px, 7.0092vw, 60px);
+    }
+
+    &__illustration {
+        width: clamp(187.5px, 87.615vw, 750px);
+        height: clamp(187.5px, 87.615vw, 750px);
+    }
+}

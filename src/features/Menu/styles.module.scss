@@ -1,0 +1,26 @@
+.menu {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    @apply bg-white;
+
+    &__nav {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &__links {
+            font-family: "Roboto", sans-serif;
+            font-size: clamp(13px, 6.07464vw, 52px);
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @apply text-dark mt-5;
+        }
+    }
+}

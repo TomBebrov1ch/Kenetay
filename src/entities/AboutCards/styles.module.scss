@@ -1,0 +1,26 @@
+.card {
+    @apply bg-gray mt-11 rounded-md;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: clamp(162.5px, 75.93299999999999vw, 650px);
+    height: clamp(180px, 84.1104vw, 720px);
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-family: "Lato", sans-serif;
+        font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+    }
+
+    &__img {
+        width: clamp(40px, 18.6912vw, 160px);
+        height: clamp(40px, 18.6912vw, 160px);
+    }
+}

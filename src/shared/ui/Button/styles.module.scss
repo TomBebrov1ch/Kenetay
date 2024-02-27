@@ -1,0 +1,38 @@
+.button {
+    width: clamp(135px, 63.0828vw, 540px);
+    height: clamp(27.5px, 12.8502vw, 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    font-weight: 600;
+    transition: 0.3s all;
+    @apply text-white;
+    @apply bg-green mt-6 rounded-sm;
+    border: none;
+    font-family: "Roboto", sans-serif;
+
+    &:hover {
+        @apply bg-hover-green;
+    }
+}
+
+.def_btn {
+    width: clamp(135px, 63.0828vw, 540px);
+    height: clamp(27.5px, 12.8502vw, 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    font-weight: 600;
+    transition: 0.3s all;
+    @apply text-white;
+    @apply bg-green mt-6 rounded-sm;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+
+    &:hover {
+        @apply bg-hover-green;
+    }
+}
