@@ -3,24 +3,41 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: clamp(162.5px, 75.93299999999999vw, 650px);
+    width: clamp(175px, 81.774vw, 700px);
     height: clamp(180px, 84.1104vw, 720px);
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 90%;
+        width: 80%;
+        @apply pt-4;
     }
 
     &__text {
         font-weight: 600;
         font-family: "Lato", sans-serif;
         font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+        text-align: center;
     }
 
     &__img {
-        width: clamp(40px, 18.6912vw, 160px);
-        height: clamp(40px, 18.6912vw, 160px);
+        width: clamp(42.5px, 19.859399999999997vw, 170px);
+        height: clamp(42.5px, 19.859399999999997vw, 170px);
+    }
+
+    &__paragraph {
+        text-align: center;
+        @apply mt-4;
+        width: 75%;
+        line-height: clamp(12px, 5.60736vw, 48px);
+    }
+
+    &__line {
+        width: 100%;
+        height: 2px;
+        @apply bg-green;
+        @apply mt-4;
+        border: none;
     }
 }

@@ -1,11 +1,10 @@
 import React from "react";
-// import { Button } from "@shared/ui/Button";
 import { Slide } from "react-awesome-reveal";
+import { DefaultButton } from "../../shared/ui/Button";
 
-import illustrarion from '../../assets/illustration.svg'
+import illustration from '../../assets/illustration.svg'
 
 import styles from "./styles.module.scss";
-import { DefaultButton } from "../../shared/ui/Button";
 
 export const HomeScreen = () => {
     return (
@@ -31,13 +30,41 @@ export const HomeScreen = () => {
                 </Slide>
                 <Slide direction="left" delay={150} triggerOnce>
                     <img
-                        src={illustrarion}
+                        src={illustration}
                         className={styles.main__illustration}
                         alt="photo"
                     />
                 </Slide>
                 <Slide direction="right" delay={200} triggerOnce>
-                    <DefaultButton text="Подробнее" to="about" />
+                    <DefaultButton text="Подробнее" />
+                </Slide>
+            </main>
+            <main id="main-pc">
+                <div className={styles.main_pc}>
+                    <Slide direction="left" delay={100} triggerOnce>
+                        <h1 className={styles.heading}>
+                            Открой мир новых{""}
+                            <span className={styles.main_pc__span}> возможностей </span>
+
+                        </h1>
+                    </Slide>
+                    <Slide direction="left" delay={150} triggerOnce>
+                        <p className="paragraph mt-4 w-[60%]">
+                            Мы представляем биржевые интересы сотен уважаемых бизнесменов из
+                            Казахстана и соседних стран. Наши брокеры всегда в курсе изменений
+                            биржевых правил и создают выгодные условия для клиентов.
+                        </p>
+                    </Slide>
+                    <Slide direction="left" delay={200} triggerOnce>
+                        <DefaultButton text="Подробнее" to="about-pc" marginTop="mt-10" />
+                    </Slide>
+                </div>
+                <Slide direction="right" delay={250} className="w-full" triggerOnce>
+                    <img
+                        src={illustration}
+                        className={styles.illustration}
+                        alt="illustration"
+                    />
                 </Slide>
             </main>
         </>

@@ -18,6 +18,7 @@ export const AboutCards: React.FC<AboutCardsData> = ({ heading, img, text }) => 
                         <img src={img} alt="circle" className={styles.card__img} />
                         <span className={styles.card__text}>{heading}</span>
                     </div>
+                    <div className={styles.card__line}><br /></div>
                     <p className={styles.card__paragraph}>{text}</p>
                 </div>
             </Fade>

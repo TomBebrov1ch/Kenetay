@@ -1,0 +1,71 @@
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @apply bg-green pt-6 mt-11;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        &__link {
+            text-decoration: none;
+            @apply text-white;
+            font-weight: 400;
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            line-height: clamp(15px, 7.0092vw, 60px);
+            font-size: clamp(10px, 4.6728vw, 40px);
+            margin: auto;
+        }
+    }
+
+    &__logo {
+        width: clamp(52.5px, 24.5322vw, 210px);
+        height: clamp(42.5px, 19.859399999999997vw, 170px);
+        @apply mb-7;
+    }
+
+    &__link {
+        text-decoration: none;
+        @apply text-white;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        line-height: clamp(15px, 7.0092vw, 60px);
+        font-size: clamp(10px, 4.6728vw, 40px);
+        margin: auto;
+    }
+
+    &__adress {
+        @apply text-dark pt-4 pb-6;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        line-height: clamp(15px, 7.0092vw, 60px);
+        font-size: clamp(8px, 3.73824vw, 32px);
+        margin: auto;
+        width: 90%;
+    }
+
+    &__line {
+        width: 100%;
+        height: 2px;
+        @apply bg-white;
+        @apply mt-7 mb-3;
+        border: none;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        @apply mt-3;
+    }
+
+    &__icon {
+        @apply mr-4;
+        width: clamp(10.5px, 4.90644vw, 42px);
+        height: clamp(10.5px, 4.90644vw, 42px);
+    }
+}

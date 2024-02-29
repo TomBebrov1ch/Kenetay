@@ -35,3 +35,32 @@
         height: clamp(187.5px, 87.615vw, 750px);
     }
 }
+
+.main-pc {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main {
+        display: none;
+    }
+
+    .main-pc {
+        width: 86.6%;
+    }
+
+    .heading {
+        font-family: 'Lato', sans-serif;
+        font-size: clamp(25px, 2.604vw, 100px);
+        text-align: left;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 135%;
+    }
+
+    .main_pc {
+        display: flex;
+        flex-direction: column;
+    }
+}

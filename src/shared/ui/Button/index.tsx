@@ -1,5 +1,5 @@
 import React from "react";
-import { Link as ScrollLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 import styles from './styles.module.scss'
 
@@ -12,13 +12,13 @@ interface ButtonProps {
 
 export const DefaultButton: React.FC<ButtonProps> = ({ text, to }) => {
     return (
-        <ScrollLink
+        <Link
             className={styles.def_btn}
-            to={to}
-            smooth={true}
+            to="services"
+            smooth
         >
             {text}
-        </ScrollLink>
+        </Link>
     )
 }
 
@@ -29,6 +29,18 @@ export const ModalButton: React.FC<ButtonProps> = ({
 }) => {
     return (
         <button className={`${styles.button} ${marginTop}`} onClick={onClick}>
+            {text}
+        </button>
+    );
+};
+
+export const ModalWhite: React.FC<ButtonProps> = ({
+    text,
+    marginTop,
+    onClick,
+}) => {
+    return (
+        <button className={`${styles.button_white} ${marginTop}`} onClick={onClick}>
             {text}
         </button>
     );
