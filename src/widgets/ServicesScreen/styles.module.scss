@@ -2,19 +2,54 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
 
     &__heading {
         font-size: clamp(15px, 7.0092vw, 60px);
         font-weight: 600;
         @apply text-dark mt-7;
+        font-family: "Unbounded", sans-serif;
     }
 
     &__paragraph {
+        font-family: "Geologica", sans-serif;
         text-align: center;
         @apply pt-7;
         line-height: clamp(15px, 7.0092vw, 60px);
         width: 80%;
         margin: auto;
+    }
+}
+
+.services_pc{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .services{
+        display: none;
+    }
+    .services_pc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &__heading{
+            font-family: "Unbounded", sans-serif;
+            margin-top: clamp(8px,0.83328vw,32px);
+            font-size: clamp(20px, 2.0832vw, 80px);
+        }
+        &__paragraph{
+            font-family: "Geologica", sans-serif;
+            padding-top: clamp(8px,0.83328vw,32px);
+            width: 45%;
+            text-align: center;
+            margin: auto;
+        }
+        &__cards{
+            display: flex;
+            justify-content: space-between;
+            width: 86.6%;
+            margin-top: clamp(16px,1.66656vw,64px);
+        }
     }
 }

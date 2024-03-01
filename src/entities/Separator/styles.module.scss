@@ -5,10 +5,10 @@
 
     &__text {
         font-size: clamp(9px, 4.20552vw, 36px);
-        font-family: "Lato", sans-serif;
+        font-family: "Geologica", sans-serif;
         font-weight: 400;
         text-align: center;
-        @apply text-green mt-11;
+        @apply text-green mt-7;
     }
 
     &__line {
@@ -17,5 +17,17 @@
         @apply bg-green;
         @apply mt-1;
         border: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .separator {
+        
+        &__text {
+            font-size: clamp(11px,1.1457600000000001vw,44px);
+        }  
+&__line{
+    width:clamp(67.5px,7.0308vw,270px);
+}
     }
 }

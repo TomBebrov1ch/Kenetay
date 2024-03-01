@@ -1,5 +1,4 @@
 import React from 'react'
-import { Slide } from 'react-awesome-reveal'
 
 import styles from './styles.module.scss'
 
@@ -15,7 +14,6 @@ interface ServiceCardProps {
 export const ServicesCard: React.FC<ServiceCardProps> = ({ heading, services }) => {
     return (
         <>
-            <Slide>
                 <div className={styles.service_card}>
                     <span className={styles.service_card__heading}>{heading}</span>
                     <div className={styles.service_card__line} >
@@ -26,7 +24,6 @@ export const ServicesCard: React.FC<ServiceCardProps> = ({ heading, services }) 
                     ))}
                     </div>
                 </div>
-            </Slide>
         </>
     )
 }

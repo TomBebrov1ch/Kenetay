@@ -35,41 +35,45 @@ export const Menu = () => {
     return (
         <Slide direction="right" className={styles.menu}>
             <nav className={styles.menu__nav}>
-                <Fade direction="right">
+                <Fade className={styles.menu__nav__links} direction="right">
                     <Link
                         to="main"
                         smooth
                         onClick={() => closeMenu()}
-                        className={styles.menu__nav__links}
                     >
                         Главная
                     </Link>
                 </Fade>
+                <Fade className={styles.menu__nav__links} direction="right" delay={100}>
                 <Link
                     to="about"
                     smooth
                     onClick={() => closeMenu()}
-                    className={styles.menu__nav__links}
                 >
                     О Компании
                 </Link>
+                </Fade>
+                <Fade className={styles.menu__nav__links} direction="right" delay={200}>
                 <Link
                     to="services"
                     smooth
                     onClick={() => closeMenu()}
-                    className={styles.menu__nav__links}
                 >
                     Услуги
                 </Link>
+                </Fade>
+                <Fade className={styles.menu__nav__links} direction="right" delay={300}>
                 <Link
                     to="contacts"
                     smooth
                     onClick={() => closeMenu()}
-                    className={styles.menu__nav__links}
                 >
                     Контакты
                 </Link>
+                </Fade>
+                <Fade direction="right" delay={400}>
                 <ModalButton text="Связаться с нами" onClick={closeMenuOpenModal} />
+                </Fade>
             </nav>
         </Slide>
     );

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Slide } from 'react-awesome-reveal'
 import { AboutCards } from '../../entities/AboutCards'
+import { Separator } from '../../entities/Separator'
 
 import money from '../../assets/money.svg'
 import illustration from '../../assets/illustration-about.svg'
 
 import styles from './styles.module.scss'
-import { Separator } from '../../entities/Separator'
 
 export const AboutScreen = () => {
     return (
@@ -25,8 +25,8 @@ export const AboutScreen = () => {
                         Благодаря опыту и квалифицированной команде, ТОО «City-Broker» занимает одно из лидирующих мест среди брокерских компаний на биржевом рынке.
                     </p>
                 </Slide>
-                <Slide direction="right" className="mt-5" delay={250} triggerOnce>
-                    <span className={styles.about__sub}>
+                <Slide className={styles.about__sub} direction="right" delay={250} triggerOnce>
+                    <span>
                         Наша схема <span className={styles.about__sub__par}>работы</span> очень
                         проста:
                     </span>
@@ -58,6 +58,8 @@ export const AboutScreen = () => {
                 className={styles.container_pc}
                 id="about-pc"
             >
+                <div className={styles.ill_con}>
+
                 <img src={illustration} alt="illustration" className={styles.illustration_pc} />
                 <div className={styles.container}>
                     <Slide direction="left" triggerOnce delay={100}>
@@ -85,6 +87,7 @@ export const AboutScreen = () => {
                             проста:
                         </span>
                     </Slide>
+                </div>
                 </div>
                 <div className={styles.cards_pc}>
                     <Slide direction="left" delay={300} triggerOnce>

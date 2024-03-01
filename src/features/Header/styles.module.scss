@@ -43,9 +43,7 @@
             &__link {
                 font-family: Inter;
                 font-size: clamp(10px, 1.0416vw, 40px);
-                font-style: normal;
                 font-weight: 400;
-                line-height: normal;
                 cursor: pointer;
                 transition: 0.3s all;
                 @apply text-dark;

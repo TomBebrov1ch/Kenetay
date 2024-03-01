@@ -16,7 +16,7 @@
 
     &__text {
         font-weight: 600;
-        font-family: "Lato", sans-serif;
+        font-family: "Unbounded", sans-serif;
         font-size: clamp(12.5px, 5.840999999999999vw, 50px);
         text-align: center;
     }
@@ -27,6 +27,7 @@
     }
 
     &__paragraph {
+        font-family: "Geologica", sans-serif;
         text-align: center;
         @apply mt-4;
         width: 75%;
@@ -39,5 +40,33 @@
         @apply bg-green;
         @apply mt-4;
         border: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card{
+        width: clamp(250px,26.04vw,1000px);
+        height: clamp(300px,31.248vw,1200px);
+        &__container{
+            width: 85%;
+        }
+        &__text{
+            font-size:clamp(15px,1.5624vw,60px);
+            text-align: center;
+            
+        }
+        &__img{
+            width: clamp(50px,5.208vw,200px);
+            height: clamp(50px,5.208vw,200px);
+        }
+        &__paragraph{
+            line-height:clamp(20px,2.0832vw,80px);
+            font-size: clamp(11.5px,1.19784vw,46px);
+            font-weight: 300;
+        }
+        &__line{
+            margin-top: clamp(11.5px,1.19784vw,46px);
+            
+        }
     }
 }
