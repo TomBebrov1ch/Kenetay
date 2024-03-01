@@ -39,7 +39,7 @@ export const HomeScreen = () => {
                     <DefaultButton text="Подробнее" />
                 </Slide>
             </main>
-            <main id="main-pc">
+            <main className={styles.main__pc} id="main-pc">
                 <div className={styles.main_pc}>
                     <Slide direction="left" delay={100} triggerOnce>
                         <h1 className={styles.heading}>
@@ -49,20 +49,20 @@ export const HomeScreen = () => {
                         </h1>
                     </Slide>
                     <Slide direction="left" delay={150} triggerOnce>
-                        <p className="paragraph mt-4 w-[60%]">
+                        <p className={styles.main_pc__paragraph}>
                             Мы представляем биржевые интересы сотен уважаемых бизнесменов из
                             Казахстана и соседних стран. Наши брокеры всегда в курсе изменений
                             биржевых правил и создают выгодные условия для клиентов.
                         </p>
                     </Slide>
                     <Slide direction="left" delay={200} triggerOnce>
-                        <DefaultButton text="Подробнее" to="about-pc" marginTop="mt-10" />
+                        <DefaultButton text="Подробнее" to="about-pc" />
                     </Slide>
                 </div>
-                <Slide direction="right" delay={250} className="w-full" triggerOnce>
+                <Slide direction="right" delay={250} triggerOnce>
                     <img
                         src={illustration}
-                        className={styles.illustration}
+                        className={styles.main_pc__illustration}
                         alt="illustration"
                     />
                 </Slide>

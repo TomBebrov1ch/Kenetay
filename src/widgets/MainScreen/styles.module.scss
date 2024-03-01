@@ -36,7 +36,7 @@
     }
 }
 
-.main-pc {
+.main__pc {
     display: none;
 }
 
@@ -46,21 +46,42 @@
         display: none;
     }
 
-    .main-pc {
+    .main__pc {
         width: 86.6%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+
     }
 
     .heading {
-        font-family: 'Lato', sans-serif;
+        font-family: "Unbounded", sans-serif;
         font-size: clamp(25px, 2.604vw, 100px);
         text-align: left;
         font-style: normal;
         font-weight: 700;
         line-height: 135%;
+        width: 70%;
+        margin-top: clamp(64px, 6.66624vw, 256px);
     }
 
     .main_pc {
         display: flex;
         flex-direction: column;
+
+        &__span {
+            @apply text-green;
+        }
+
+        &__paragraph {
+            font-family: "Geologica", sans-serif;
+            margin-top: clamp(16px, 1.66656vw, 64px);
+            width: 60%;
+        }
+
+        &__illustration {
+            width: clamp(310px, 32.2896vw, 1240px);
+            height: clamp(300px, 31.248vw, 1200px);
+        }
     }
 }

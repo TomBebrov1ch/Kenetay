@@ -30,7 +30,8 @@
         @apply mt-8;
 
         .logo {
-            width: clamp(85px, 8.8536vw, 340px);
+            width: clamp(79px, 8.22864vw, 316px);
+            height: clamp(65.5px, 6.8224800000000005vw, 262px);
         }
 
         &__nav {
@@ -48,10 +49,10 @@
                 cursor: pointer;
                 transition: 0.3s all;
                 @apply text-dark;
-                font-family: 'Roboto', sans-serif;
+                font-family: "Geologica", sans-serif;
 
                 &:hover {
-                    @apply text-gray;
+                    color: green;
                 }
             }
         }
