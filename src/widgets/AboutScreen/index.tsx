@@ -58,12 +58,12 @@ export const AboutScreen = () => {
                 className={styles.container_pc}
                 id="about-pc"
             >
-                <img src={illustration} alt="illustration" />
+                <img src={illustration} alt="illustration" className={styles.illustration_pc} />
                 <div className={styles.container}>
                     <Slide direction="left" triggerOnce delay={100}>
-                        <span className={styles.container__sep}>
-                            <p className={styles.container__sep__text}>О нас</p>
-                            <br className={styles.container__sep__separator} />
+                        <span className={styles.container__s}>
+                            <p className={styles.container__s__text}>О нас</p>
+                            <hr className={styles.container__s__separator} />
                         </span>
                     </Slide>
                     <Slide direction="right" delay={150} triggerOnce>
@@ -80,38 +80,35 @@ export const AboutScreen = () => {
                         </p>
                     </Slide>
                     <Slide direction="right" delay={250} className="mt-8" triggerOnce>
-                        <span className={styles.container_sub_heading}>
-                            Наша схема <span className="text-custom-red">работы</span> очень
+                        <span className={styles.container__sub_heading}>
+                            Наша схема <span className={styles.container__sub_heading__span}>работы</span> очень
                             проста:
                         </span>
                     </Slide>
                 </div>
-                {/* <div className="flex items-center justify-between w-[100%]">
+                <div className={styles.cards_pc}>
                     <Slide direction="left" delay={300} triggerOnce>
-                        <StepCard
-                        marginTop="mt-16"
-                        number="1"
-                        heading="Подача Заявки"
-                        text="Связаться с нашими специалистами. Обговорить с брокером заявки по закупке товаров на условиях Заказчика (товар, количество, цена, сроки и места поставки и условия оплаты) Затем брокер публикует объявления аукциона по данному товару на сайте биржи."
+                        <AboutCards
+                            img={money}
+                            heading="Подача Заявки"
+                            text="Связаться с нашими специалистами. Обговорить с брокером заявки по закупке товаров на условиях Заказчика (товар, количество, цена, сроки и места поставки и условия оплаты) Затем брокер публикует объявления аукциона по данному товару на сайте биржи."
                         />
                     </Slide>
                     <Slide direction="up" delay={350} triggerOnce>
-                        <StepCard
-                        marginTop="mt-16"
-                        number="2"
-                        heading="Внесение Обеспечения"
-                        text="После того, как Заказчик отобрал Поставщиков, производится внесение гарантийного обеспечения допущенными претендентами. Проведение торгов, заключение сделки между Поставщиком и Заказчиком по лучшей цене товаров."
+                        <AboutCards
+                            img={money}
+                            heading="Внесение Обеспечения"
+                            text="После того, как Заказчик отобрал Поставщиков, производится внесение гарантийного обеспечения допущенными претендентами. Проведение торгов, заключение сделки между Поставщиком и Заказчиком по лучшей цене товаров."
                         />
                     </Slide>
                     <Slide direction="right" delay={400} triggerOnce>
-                        <StepCard
-                        marginTop="mt-16"
-                        number="3"
-                        heading="Исполнение Поставки"
-                        text="Исполнение Поставщиком обязательств по договору поставки, заключенному с Заказчиком. Отгрузка закупленного товара согласно условиям, указанных в договоре между Заказчиком и Поставщиком!"
-                        /> 
+                        <AboutCards
+                            img={money}
+                            heading="Исполнение Поставки"
+                            text="Исполнение Поставщиком обязательств по договору поставки, заключенному с Заказчиком. Отгрузка закупленного товара согласно условиям, указанных в договоре между Заказчиком и Поставщиком!"
+                        />
                     </Slide>
-                </div> */}
+                </div>
             </section>
         </>
     )

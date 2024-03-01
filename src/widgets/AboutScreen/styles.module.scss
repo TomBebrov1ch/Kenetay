@@ -32,8 +32,15 @@
 
     .container_pc {
         display: flex;
+        flex-direction: column;
         width: 86.6%;
         margin: auto;
+        padding-top: clamp(32px, 3.33312vw, 128px);
+    }
+
+    .illustration_pc {
+        width: clamp(310px, 32.2896vw, 1240px);
+        height: clamp(300px, 31.248vw, 1200px);
     }
 
     .container {
@@ -50,16 +57,16 @@
             @apply mt-5;
         }
 
-        &__sep {
+        &__s {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: end;
+            margin-top: clamp(32px, 3.33312vw, 128px);
 
             &__text {
                 font-size: clamp(9px, 4.20552vw, 36px);
-                font-family: "Lato", sans-serif;
+                font-family: "Geologica", sans-serif;
                 font-weight: 400;
-                text-align: center;
                 @apply text-green mt-11;
             }
 
@@ -71,5 +78,33 @@
                 border: none;
             }
         }
+
+        &__heading {
+            font-family: "Unbounded", sans-serif;
+            margin-top: clamp(8px, 0.83328vw, 32px);
+            font-size: clamp(20px, 2.0832vw, 80px);
+        }
+
+        &__paragraph {
+            font-family: "Geologica", sans-serif;
+            margin-top: clamp(8px, 0.83328vw, 32px);
+            margin-bottom: clamp(16px, 1.66656vw, 64px);
+            width: 65%;
+            margin-left: auto;
+        }
+
+        &__sub_heading {
+            font-family: "Unbounded", sans-serif;
+
+            &__span {
+                @apply text-green;
+            }
+        }
+    }
+
+    .cards_pc {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
     }
 }
