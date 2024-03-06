@@ -72,6 +72,7 @@
         cursor: pointer;
     }
 }
+
 @media screen and (min-width: 1024px) {
     .button_white {
         width: clamp(125px, 13.02vw, 500px);
@@ -80,7 +81,7 @@
         @apply mt-0;
 
         &:hover {
-            @apply bg-green;
+            @apply bg-gray;
             cursor: pointer;
         }
     }

@@ -6,6 +6,7 @@ import { Menu } from '../../features/Menu';
 import { AboutScreen } from '../../widgets/AboutScreen';
 import { ServicesScreen } from '../../widgets/ServicesScreen';
 import { Footer } from '../../features/Footer/index'
+import { Modal } from '../../features/Modal';
 
 export const HomePage = () => {
     const isMenuOpen = useSelector((state: any) => state.menu.isOpen);
@@ -14,6 +15,7 @@ export const HomePage = () => {
         <>
             <Header />
             {isMenuOpen ? <Menu /> : null}
+            {isModalOpen && <Modal />}
             <HomeScreen />
             <AboutScreen />
             <ServicesScreen />

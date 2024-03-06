@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "../../redux/menuSlice";
 import { Link } from 'react-scroll';
 import { ModalButton } from '../../shared/ui/Button';
+import { openModal } from '../../redux/modalSlice';
 
 import logo from '../../assets/logo.svg'
 
@@ -16,6 +17,10 @@ export const Header = () => {
     function openMenu() {
         dispatch(toggleMenu());
     }
+
+    function openModalWindow() {
+        dispatch(openModal())
+    }
     return (
         <>
             <header className={styles.header_mob}>
@@ -26,7 +31,7 @@ export const Header = () => {
                     toggled={isMenuOpen}
                 />
             </header>
-            <header className={styles.header_pc}>
+            <header className={styles.header_pc} id='header-pc'>
                 <img className={styles.logo} src={logo} alt="logo" />
                 <nav className={styles.header_pc__nav}>
                     <Link
@@ -46,7 +51,7 @@ export const Header = () => {
                     <Link
                         smooth
                         className={`${styles.header_pc__nav__link}`}
-                        to="services"
+                        to="services-pc"
                     >
                         Услуги
                     </Link>
@@ -54,14 +59,14 @@ export const Header = () => {
                     <Link
                         smooth
                         className={`${styles.header_pc__nav__link}`}
-                        to="contacts-pc"
+                        to="footer-pc"
                     >
                         Контакты
                     </Link>
                 </nav>
                 <ModalButton
                     text="Связаться с нами"
-                // onClick={() => openModalWindow()}
+                    onClick={() => openModalWindow()}
                 />
             </header>
         </>

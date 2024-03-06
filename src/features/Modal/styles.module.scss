@@ -1,0 +1,59 @@
+.modal_window {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__heading {
+        font-family: "Unbounded", sans-serif;
+        font-size: clamp(13px, 1.35408vw, 52px);
+        text-align: center;
+        font-weight: 600;
+        width: 70%;
+
+        &__span {
+            @apply text-green;
+        }
+    }
+
+    &__subhead {
+        font-family: "Geologica", sans-serif;
+        font-size: clamp(10.5px, 1.09368vw, 42px);
+        margin-top: clamp(8px, 0.83328vw, 32px);
+        margin-bottom: clamp(8px, 0.83328vw, 32px);
+    }
+
+    &__items {
+        background-color: #ffffff;
+        @apply rounded-lg;
+        height: clamp(225px, 23.436vw, 900px);
+        width: clamp(300px, 31.248vw, 1200px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__text {
+        font-family: "Geologica", sans-serif;
+        width: 70%;
+        margin-top: clamp(4px, 0.41664vw, 16px);
+
+        &__span {
+            @apply text-green;
+        }
+    }
+
+    &__mt {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: clamp(16px, 1.66656vw, 64px);
+    }
+}
