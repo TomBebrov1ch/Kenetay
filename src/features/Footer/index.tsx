@@ -90,7 +90,7 @@ export const Footer = () => {
                     </nav>
                     <ModalWhite
                         text="Связаться с нами"
-                    // onClick={() => openModalWindow()}
+                        onClick={() => openModalWindow()}
                     />
                 </div>
                 <div className={styles.footer_pc__line} >

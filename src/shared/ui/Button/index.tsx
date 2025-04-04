@@ -5,16 +5,16 @@ import styles from './styles.module.scss'
 
 interface ButtonProps {
     text: string;
-    to?: string | any;
+    scrollTo: string;
     marginTop?: string;
     onClick?: () => void;
 }
 
-export const DefaultButton: React.FC<ButtonProps> = ({ text, to }) => {
+export const DefaultButton: React.FC<ButtonProps> = ({ text, scrollTo }) => {
     return (
         <Link
             className={styles.def_btn}
-            to="services"
+            to={scrollTo}
             smooth
         >
             {text}

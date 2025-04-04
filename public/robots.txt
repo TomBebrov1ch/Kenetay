@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://kenetai-agro.kz/sitemap.xml
+Host: https://kenetai-agro.kz

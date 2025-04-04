@@ -1,6 +1,7 @@
 import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { DefaultButton } from "../../shared/ui/Button";
+import { Link } from 'react-scroll';
 
 import illustration from '../../assets/illustration.svg'
 
@@ -15,10 +16,10 @@ export const HomeScreen = () => {
                     triggerOnce
                 >
                     <h1 className={styles.main__heading}>
-                        Открой мир новых
+                        Брокерские услуги{" "}
                     </h1>
                     <span className={styles.main__heading__span}>
-                        возможностей
+                        с Кенетай Агро
                     </span>
                 </Slide>
                 <Slide direction="right" delay={100} triggerOnce>
@@ -36,16 +37,17 @@ export const HomeScreen = () => {
                     />
                 </Slide>
                 <Slide direction="right" delay={200} triggerOnce>
-                    <DefaultButton text="Подробнее" />
+
+                    <DefaultButton text="Подробнее" scrollTo="services" />
+
                 </Slide>
             </main>
             <main className={styles.main__pc} id="main-pc">
                 <div className={styles.main_pc}>
                     <Slide direction="left" delay={100} triggerOnce>
                         <h1 className={styles.heading}>
-                            Открой мир новых{""}
-                            <span className={styles.main_pc__span}> возможностей </span>
-
+                            Брокерские услуги на товарных биржах Казахстана{" "}<br />
+                            <span className={styles.main_pc__span}>с Кенетай Агро</span>
                         </h1>
                     </Slide>
                     <Slide direction="left" delay={150} triggerOnce>
@@ -56,7 +58,9 @@ export const HomeScreen = () => {
                         </p>
                     </Slide>
                     <Slide direction="left" delay={200} triggerOnce>
-                        <DefaultButton text="Подробнее" to="about-pc" />
+
+                        <DefaultButton text="Подробнее" scrollTo="services-pc" />
+
                     </Slide>
                 </div>
                 <Slide direction="right" delay={250} triggerOnce>
