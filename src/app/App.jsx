@@ -1,7 +1,7 @@
-import React from 'react'
-import { MyRoutes } from '../pages/Home'
+import React from "react";
+import { MyRoutes } from "../pages/Home";
 
-import '../shared/styles/global.scss'
+import "../shared/styles/global.scss";
 
 export const App = () => {
   return (
@@ -11,5 +11,4 @@ export const App = () => {
   );
 };
 
-
-export default App
+export default App;

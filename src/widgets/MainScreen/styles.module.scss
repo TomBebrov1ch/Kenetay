@@ -1,89 +1,87 @@
 .main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
-    text-align: center;
-    margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  text-align: center;
+  margin: auto;
 
-    &__heading {
-        @apply mt-11;
-        font-size: clamp(19px, 8.878319999999999vw, 76px);
-        font-weight: 600;
-        @apply text-dark;
-        font-family: "Unbounded", sans-serif;
+  &__heading {
+    @apply mt-11;
+    font-size: clamp(19px, 8.878319999999999vw, 76px);
+    font-weight: 600;
+    @apply text-dark;
+    font-family: "Unbounded", sans-serif;
 
-        &__span {
-            font-size: clamp(19px, 8.878319999999999vw, 76px);
-            font-weight: 600;
-            @apply text-dark;
-            @apply text-green;
-            font-family: "Unbounded", sans-serif;
-        }
+    &__span {
+      font-size: clamp(19px, 8.878319999999999vw, 76px);
+      font-weight: 600;
+      @apply text-dark;
+      @apply text-green;
+      font-family: "Unbounded", sans-serif;
     }
+  }
 
-    &__paragraph {
-        @apply mt-7;
-        font-size: clamp(8px, 3.73824vw, 32px);
-        font-weight: 200;
-        @apply text-dark;
-        line-height: clamp(15px, 7.0092vw, 60px);
-        font-family: "Geologica", sans-serif;
-    }
+  &__paragraph {
+    @apply mt-7;
+    font-size: clamp(8px, 3.73824vw, 32px);
+    font-weight: 200;
+    @apply text-dark;
+    line-height: clamp(15px, 7.0092vw, 60px);
+    font-family: "Geologica", sans-serif;
+  }
 
-    &__illustration {
-        width: clamp(187.5px, 87.615vw, 750px);
-        height: clamp(187.5px, 87.615vw, 750px);
-    }
+  &__illustration {
+    width: clamp(187.5px, 87.615vw, 750px);
+    height: clamp(187.5px, 87.615vw, 750px);
+  }
 }
 
 .main__pc {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
+  .main {
+    display: none;
+  }
 
-    .main {
-        display: none;
+  .main__pc {
+    width: 86.6%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .heading {
+    font-family: "Unbounded", sans-serif;
+    font-size: clamp(25px, 2.604vw, 100px);
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%;
+    width: 70%;
+    margin-top: clamp(64px, 6.66624vw, 256px);
+  }
+
+  .main_pc {
+    display: flex;
+    flex-direction: column;
+
+    &__span {
+      @apply text-green;
     }
 
-    .main__pc {
-        width: 86.6%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-
+    &__paragraph {
+      font-family: "Geologica", sans-serif;
+      margin-top: clamp(16px, 1.66656vw, 64px);
+      width: 70%;
     }
 
-    .heading {
-        font-family: "Unbounded", sans-serif;
-        font-size: clamp(25px, 2.604vw, 100px);
-        text-align: left;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 135%;
-        width: 70%;
-        margin-top: clamp(64px, 6.66624vw, 256px);
+    &__illustration {
+      width: clamp(310px, 32.2896vw, 1240px);
+      height: clamp(300px, 31.248vw, 1200px);
     }
-
-    .main_pc {
-        display: flex;
-        flex-direction: column;
-
-        &__span {
-            @apply text-green;
-        }
-
-        &__paragraph {
-            font-family: "Geologica", sans-serif;
-            margin-top: clamp(16px, 1.66656vw, 64px);
-            width: 60%;
-        }
-
-        &__illustration {
-            width: clamp(310px, 32.2896vw, 1240px);
-            height: clamp(300px, 31.248vw, 1200px);
-        }
-    }
+  }
 }

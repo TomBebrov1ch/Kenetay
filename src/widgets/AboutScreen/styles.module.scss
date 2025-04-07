@@ -1,124 +1,130 @@
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
 
-    &__heading {
-        font-size: clamp(15px, 7.0092vw, 60px);
-        font-weight: 600;
-        @apply text-dark mt-7;
-        font-family: "Unbounded", sans-serif;
+  &__heading {
+    font-size: clamp(15px, 7.0092vw, 60px);
+    font-weight: 600;
+    @apply text-dark mt-7;
+    font-family: "Unbounded", sans-serif;
+  }
+
+  &__paragraph {
+    font-family: "Geologica", sans-serif;
+    text-align: center;
+    @apply mt-7;
+    line-height: clamp(15px, 7.0092vw, 60px);
+  }
+  &__sub {
+    font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+    font-family: "Unbounded", sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin-top: clamp(8px, 3.73824vw, 32px);
+    &__par {
+      @apply text-green;
     }
-    
-    &__paragraph {
-        font-family: "Geologica", sans-serif;
-        text-align: center;
-        @apply mt-7;
-        line-height: clamp(15px, 7.0092vw, 60px);
-    }
-    &__sub{
-        font-size: clamp(12.5px,5.840999999999999vw,50px);
-        font-family: "Unbounded", sans-serif;
-        text-align: center;
-        font-weight: 500;
-        margin-top: clamp(8px,3.73824vw,32px);
-        &__par{
-            @apply text-green;
-        }
-    }
+  }
 }
 
 .container_pc {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
     display: none;
-}
+  }
 
-
-    @media screen and (min-width: 1024px) {
-    .about {
-        display: none;
-    }
-
-    .container_pc {
-        display: flex;
-        flex-direction: column;
-        width: 86.6%;
-        margin: auto;
-        padding-top: clamp(32px, 3.33312vw, 128px);
-    }
-
-    .illustration_pc {
-        width: clamp(310px, 32.2896vw, 1240px);
-        height: clamp(300px, 31.248vw, 1200px);
-    }
-.ill_con{
+  .container_pc {
     display: flex;
-}
-    .container {
-        display: flex;
-        flex-direction: column;
-        text-align: end;
+    flex-direction: column;
+    width: 86.6%;
+    margin: auto;
+    padding-top: clamp(32px, 3.33312vw, 128px);
+  }
 
-        &__heading {
-            font-size: clamp(20px, 2.0832vw, 80px);
-        }
+  .illustration_pc {
+    width: clamp(310px, 32.2896vw, 1240px);
+    height: clamp(300px, 31.248vw, 1200px);
+  }
+  .ill_con {
+    display: flex;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
 
-        &__sub_heading {
-            font-size: clamp(15px, 1.5624vw, 60px);
-            @apply mt-5;
-        }
-
-        &__s {
-            display: flex;
-            flex-direction: column;
-            align-items: end;
-            margin-top: clamp(32px, 3.33312vw, 128px);
-
-            &__text {
-                font-size: clamp(11px,1.1457600000000001vw,44px);
-                font-family: "Geologica", sans-serif;
-                font-weight: 400;
-                @apply text-green mt-11;
-            }
-
-            &__separator {
-                width:clamp(67.5px,7.0308vw,270px);
-                height: 2px;
-                @apply bg-green;
-                @apply mt-1;
-                border: none;
-            }
-        }
-
-
-        &__heading {
-            font-family: "Unbounded", sans-serif;
-            margin-top: clamp(8px, 0.83328vw, 32px);
-            font-size: clamp(20px, 2.0832vw, 80px);
-        }
-
-        &__paragraph {
-            font-family: "Geologica", sans-serif;
-            margin-top: clamp(8px, 0.83328vw, 32px);
-            margin-bottom: clamp(16px, 1.66656vw, 64px);
-            width: 55%;
-            margin-left: auto;
-        }
-
-        &__sub_heading {
-            font-family: "Unbounded", sans-serif;
-
-            &__span {
-                @apply text-green;
-            }
-        }
+    &__heading {
+      font-size: clamp(20px, 2.0832vw, 80px);
     }
 
-    .cards_pc {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
+    &__sub_heading {
+      font-size: clamp(15px, 1.5624vw, 60px);
+      @apply mt-5;
     }
+
+    &__s {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      margin-top: clamp(32px, 3.33312vw, 128px);
+
+      &__text {
+        font-size: clamp(25px, 2.604vw, 100px);
+        font-family: "Geologica", sans-serif;
+        font-weight: 600;
+        @apply text-green mt-11;
+      }
+
+      &__separator {
+        width: clamp(67.5px, 7.0308vw, 270px);
+        height: 2px;
+        @apply bg-green;
+        @apply mt-1;
+        border: none;
+      }
+    }
+
+    &__heading {
+      font-family: "Unbounded", sans-serif;
+      margin-top: clamp(8px, 0.83328vw, 32px);
+      font-size: clamp(20px, 2.0832vw, 80px);
+    }
+
+    &__paragraph {
+      font-family: "Geologica", sans-serif;
+      margin-top: clamp(8px, 0.83328vw, 32px);
+      margin-bottom: clamp(16px, 1.66656vw, 64px);
+      width: 65%;
+      margin-left: auto;
+    }
+
+    &__sub_heading {
+      font-family: "Unbounded", sans-serif;
+      font-size: clamp(20px, 2.0832vw, 80px);
+
+      &__span {
+        @apply text-green;
+      }
+    }
+  }
+
+  .cards_pc_layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .cards_pc {
+    margin-top: 32px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
 }
